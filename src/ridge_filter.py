@@ -85,7 +85,7 @@ def ridge_filter(im, orient, freq, kx, ky):
     
     filt_rows, filt_cols = reffilter.shape;    
     
-    gabor_filter = np.array(np.zeros((180/angleInc,filt_rows,filt_cols)));
+    gabor_filter = np.array(np.zeros((int(180/angleInc), (filt_rows), (filt_cols)), dtype = int))
     
     for o in range(0,180/angleInc):
         
